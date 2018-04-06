@@ -20,7 +20,7 @@ class TreeNode:
 
         Returns the number of children of N that are not None.
         '''
-        return = sum([1 for child in [self.left, self.right] if child])
+        return sum([1 for child in [self.left, self.right] if child])
 
 class TreapNode(TreeNode):
     '''A node in a treap.'''
@@ -109,7 +109,6 @@ class AvlTree(Bst):
         return added
 
     def remove(self, n):
-        pass
         self.root, removed = avl_remove(self.root, n)
         if removed:
             self.size -= 1
@@ -251,7 +250,7 @@ def bst_remove(node, n):
     '''
     pass
 
-########## BST helper functions. ##########
+########## Treap helper functions. ##########
 
 def treap_add(node, n, p):
     '''treap_add(node, int, int) -> (node, bool)
